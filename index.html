@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CIIRR</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="section_title">Радіаційно-гігієнічний принцип безпеки водосховища</h2>
+        <h3 class="section_subtitle">I.	Вміст радіонукліду у воді водосховища (C<sub>water</sub>)</h3>
+        <div class="first_part">
+         
+            <div class="selector_area">
+                <ul id="select_block">
+                   <li id="select_item">
+                    <select id="sel">
+                        <option selected>Оберіть радіонуклід...</option>
+                        </select>
+                       <input type="tel" size="5" placeholder="Вміст" id="inp"/>
+                      <span id="rad_normal"></span>
+                      
+                      <!-- formula --> 
+                      <span id="formula0"></span>
+                   </li>
+                   
+                </ul> 
+            </div>
+          <ul class="btn_list">
+              <li class="btn_item" class = control_btnItem><button onclick="appendRadio()" class="control_btn">Додати радіонуклід</button></li>
+              <li class="btn_item" class = control_btnItem><button onclick="deleteRadio()" class="control_btn">Видалити радіонуклід</button></li>
+          </ul>
+        </div>
+        <h3 class="section_subtitle">II. Перевірка якості води водосховища за критерієм радіаційної безпеки</h3>
+
+        <button onclick="Func1()" class="checkResult_btn">Перевірити результат</button>
+        <div class="result_space">
+        
+        
+        </div>
+        <h2 class="section_title">Екологічний принцип безпеки водосховища</h2>
+        <p style="font-style:italic;font-weight:700;">L=370 кБк/кг.</p>
+
+        <button onclick="Func2()" class="calculate_btn">Розрахувати</button>
+       
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+</html>
